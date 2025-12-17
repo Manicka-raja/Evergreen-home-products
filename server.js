@@ -8,6 +8,7 @@ const AppError = require("./class/errorClass");
 const CartRoute = require("./Routes/CartRoute");
 const OrderRoute = require("./Routes/OrderRoute");
 const BookingRoute = require("./Routes/BookingRoute");
+const compression = require("compression");
 dotenv.config({ path: "./config.env" });
 
 const userRouter = require("./Routes/UserRouter");
@@ -43,7 +44,7 @@ mongoose
   .then(() => console.log("db connected successful"))
   .catch((err) => console.log("there is error in connecting db", err));
 console.log(process.env.NODE_ENV);
-
+app.use(compression());
 app.use("/api/v1/products", TourRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/reviews", reviewRouter);
@@ -55,7 +56,7 @@ app.use((req, res, next) => {
 });
 
 app.use(globalError);
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log("server is started");
 });
