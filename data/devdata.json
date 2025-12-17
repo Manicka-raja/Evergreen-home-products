@@ -1,0 +1,242 @@
+[
+  {
+    "_id": "6501a1b2c3d4e5f678901201",
+    "name": "Margherita Pizza",
+    "category": "Pizza",
+    "price": 299,
+    "description": "Classic cheese pizza with fresh basil.",
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 120,
+    "status": "Available",
+    "inStock": true,
+    "image": "https://example.com/images/margherita.jpg",
+    "gallery": ["https://example.com/images/margherita-1.jpg"],
+    "spicyLevel": 1,
+    "preparationTime": 20,
+    "createdAt": "2025-11-27T05:00:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  },
+  {
+    "_id": "6501a1b2c3d4e5f678901202",
+    "name": "Veggie Burger",
+    "category": "Burger",
+    "price": 149,
+    "description": "Delicious veggie patty with fresh veggies.",
+    "ratingsAverage": 4.2,
+    "ratingsQuantity": 85,
+    "status": "Out of Stock",
+    "inStock": false,
+    "image": "https://example.com/images/veggie-burger.jpg",
+    "gallery": ["https://example.com/images/veggie-burger-1.jpg"],
+    "spicyLevel": 2,
+    "preparationTime": 15,
+    "createdAt": "2025-11-27T05:10:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  },
+  {
+    "_id": "6501a1b2c3d4e5f678901203",
+    "name": "Mango Smoothie",
+    "category": "Drinks",
+    "price": 99,
+    "description": "Fresh mango blended with ice and yogurt.",
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 150,
+    "status": "Available",
+    "inStock": true,
+    "image": "https://example.com/images/mango-smoothie.jpg",
+    "gallery": ["https://example.com/images/mango-smoothie-1.jpg"],
+    "spicyLevel": 0,
+    "preparationTime": 5,
+    "createdAt": "2025-11-27T05:20:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  },
+  {
+    "_id": "6501a1b2c3d4e5f678901204",
+    "name": "Paneer Tikka",
+    "category": "Starter",
+    "price": 199,
+    "description": "Spicy grilled paneer cubes with herbs.",
+    "ratingsAverage": 4.3,
+    "ratingsQuantity": 90,
+    "status": "Available",
+    "inStock": true,
+    "image": "https://example.com/images/paneer-tikka.jpg",
+    "gallery": ["https://example.com/images/paneer-tikka-1.jpg"],
+    "spicyLevel": 3,
+    "preparationTime": 25,
+    "createdAt": "2025-11-27T05:25:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  },
+  {
+    "_id": "6501a1b2c3d4e5f678901205",
+    "name": "Chocolate Cake",
+    "category": "Dessert",
+    "price": 249,
+    "description": "Rich chocolate cake with ganache topping.",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 110,
+    "status": "Available",
+    "inStock": true,
+    "image": "https://example.com/images/chocolate-cake.jpg",
+    "gallery": ["https://example.com/images/chocolate-cake-1.jpg"],
+    "spicyLevel": 0,
+    "preparationTime": 30,
+    "createdAt": "2025-11-27T05:30:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  },
+  {
+    "_id": "6501a1b2c3d4e5f678901206",
+    "name": "Veg Fried Rice",
+    "category": "Main Course",
+    "price": 179,
+    "description": "Stir-fried rice with mixed vegetables.",
+    "ratingsAverage": 4.4,
+    "ratingsQuantity": 95,
+    "status": "Available",
+    "inStock": true,
+    "image": "https://example.com/images/veg-fried-rice.jpg",
+    "gallery": ["https://example.com/images/veg-fried-rice-1.jpg"],
+    "spicyLevel": 2,
+    "preparationTime": 20,
+    "createdAt": "2025-11-27T05:35:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  },
+  {
+    "_id": "6501a1b2c3d4e5f678901207",
+    "name": "French Fries",
+    "category": "Starter",
+    "price": 99,
+    "description": "Crispy golden fries with ketchup.",
+    "ratingsAverage": 4.1,
+    "ratingsQuantity": 130,
+    "status": "Out of Stock",
+    "inStock": false,
+    "image": "https://example.com/images/french-fries.jpg",
+    "gallery": ["https://example.com/images/french-fries-1.jpg"],
+    "spicyLevel": 1,
+    "preparationTime": 10,
+    "createdAt": "2025-11-27T05:40:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  },
+  {
+    "_id": "6501a1b2c3d4e5f678901208",
+    "name": "Coke",
+    "category": "Drinks",
+    "price": 49,
+    "description": "Chilled Coca-Cola beverage.",
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 200,
+    "status": "Available",
+    "inStock": true,
+    "image": "https://example.com/images/coke.jpg",
+    "gallery": ["https://example.com/images/coke-1.jpg"],
+    "spicyLevel": 0,
+    "preparationTime": 2,
+    "createdAt": "2025-11-27T05:45:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  },
+  {
+    "_id": "6501a1b2c3d4e5f678901209",
+    "name": "Cheese Sandwich",
+    "category": "Snacks",
+    "price": 129,
+    "description": "Grilled sandwich with melted cheese.",
+    "ratingsAverage": 4.3,
+    "ratingsQuantity": 105,
+    "status": "Available",
+    "inStock": true,
+    "image": "https://example.com/images/cheese-sandwich.jpg",
+    "gallery": ["https://example.com/images/cheese-sandwich-1.jpg"],
+    "spicyLevel": 1,
+    "preparationTime": 12,
+    "createdAt": "2025-11-27T05:50:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  },
+  {
+    "_id": "6501a1b2c3d4e5f678901210",
+    "name": "Chocolate Milkshake",
+    "category": "Drinks",
+    "price": 119,
+    "description": "Rich chocolate milkshake with whipped cream.",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 140,
+    "status": "Available",
+    "inStock": true,
+    "image": "https://example.com/images/chocolate-milkshake.jpg",
+    "gallery": ["https://example.com/images/chocolate-milkshake-1.jpg"],
+    "spicyLevel": 0,
+    "preparationTime": 5,
+    "createdAt": "2025-11-27T05:55:00.000Z",
+    "location": [
+      {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716],
+        "description": "Main kitchen location"
+      }
+    ],
+    "guides": []
+  }
+]
