@@ -19,7 +19,6 @@ app.use(
   "/img/products",
   express.static(path.join(__dirname, "public/img/products"))
 );
-3;
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
