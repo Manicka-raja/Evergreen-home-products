@@ -39,21 +39,29 @@ const createSendToken = (user, statusCode, res) => {
 };
 
 exports.signup = async (req, res, next) => {
-  const photoName = req.file ? req.file.filename : "default.jpg";
-  const newUser = await User.create({
-    name: req.body.name,
-    email: req.body.email,
-    password: req.body.password,
-    confirmPassword: req.body.confirmPassword,
-    photo: photoName,
-  });
+  try {
+    const photoName = req.file ? req.file.filename : "default.jpg";
 
-  // const Token = signToken(newUser._id);
-  const url = `http://localhost:5173`;
-  new Email(newUser, url).sendWelcome();
-  console.log("Email Sent!");
+    const newUser = await User.create({
+      name: req.body.name,
+      email: req.body.email,
+      password: req.body.password,
+      confirmPassword: req.body.confirmPassword,
+      photo: photoName,
+    });
 
-  createSendToken(newUser, 201, res);
+    const url = process.env.FRONTEND_URL || "http://localhost:5173";
+
+    try {
+      await new Email(newUser, url).sendWelcome();
+    } catch (err) {
+      console.error("Email failed:", err.message);
+    }
+
+    createSendToken(newUser, 201, res);
+  } catch (err) {
+    next(err);
+  }
 };
 
 exports.login = async (req, res, next) => {
