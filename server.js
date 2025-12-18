@@ -21,10 +21,11 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: ["https://evergreen-home-products.onrender.com"],
+    origin: "https://evergreen-frontend-cqzj.onrender.com",
     credentials: true,
   })
 );
+app.options("*", cors());
 
 app.use(cookieParser());
 

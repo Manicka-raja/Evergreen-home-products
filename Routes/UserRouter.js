@@ -4,20 +4,24 @@ const authController = require("../Controllers/authController");
 const AppError = require("../class/errorClass");
 
 const router = express.Router();
+
 router.route("/signup").post(userController.uploadUser, authController.signup);
 router.route("/login").post(authController.login);
 router.route("/forgot").post(authController.forgotPassword);
 router.route("/newPass/:token").patch(authController.newPassword);
 router.route("/logout").get(authController.logout);
+
 router
   .route("/updatePass")
   .patch(authController.protect, authController.updateMyPass);
+
 router.get(
   "/me",
   authController.protect,
   userController.getMe,
   userController.getByUserById
 );
+
 router
   .route("/updateMe")
   .patch(
@@ -25,6 +29,7 @@ router
     userController.uploadUser,
     userController.updateMe
   );
+
 router
   .route("/")
   .get(userController.getUsers)
