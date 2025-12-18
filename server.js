@@ -14,11 +14,8 @@ dotenv.config({ path: "./config.env" });
 const userRouter = require("./Routes/UserRouter");
 const app = express();
 const path = require("path");
-app.use("/img/user", express.static(path.join(__dirname, "public/img/user")));
-app.use(
-  "/img/products",
-  express.static(path.join(__dirname, "public/img/products"))
-);
+app.use("/img/products", express.static("public/img/products"));
+app.use("/img/user", express.static("public/img/user"));
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
