@@ -99,8 +99,10 @@ exports.updateMe = async (req, res, next) => {
   const filteredBody = {};
   if (req.body.name) filteredBody.name = req.body.name;
   if (req.body.email) filteredBody.email = req.body.email;
+  if (req.file) filteredBody.photo = req.file.filename;
+
   const Updateuser = await User.findByIdAndUpdate(req.user.id, filteredBody, {
-    new: true,
+    new: true
     runValidators: true,
   });
   res.status(200).json({
